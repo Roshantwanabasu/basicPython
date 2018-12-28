@@ -17,7 +17,7 @@ class Circle(Shape): #child
 
 sq1 = Square(5, "Green")
 sq2 = Square(9, "Black")
-c1 = Circle(10,"Orange")
+c1 = Circle(11,"Orange")
 
 print(sq1.color,sq1.sides,sq1.width)
 print(sq2.color,sq2.sides,sq2.width)
