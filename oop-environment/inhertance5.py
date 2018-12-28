@@ -53,7 +53,7 @@ def printArea(s):
     print(s.calArea())
 
 sq1 = Square(5, "Green")
-sq2 = Square(9, "Black")
+sq2 = Square(8, "Black")
 c1 = Circle(11,"Orange")
 t1 = Triangle(3,4,5,"Purple")
 print(sq1.color,sq1.sides,sq1.width)
