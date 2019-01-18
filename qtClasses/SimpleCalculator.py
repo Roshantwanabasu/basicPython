@@ -6,7 +6,7 @@ class Calc(QWidget):
 
     def __init__(self):
         super(Calc, self).__init__()
-        self.title = 'Simple Calculator'
+        self.setWindowTitle("Simple Calculator")
         numOne = QLabel("Enter 1st number")
         numTwo = QLabel("Enter 2nd number")
         self.firstNum = QLineEdit()
@@ -14,8 +14,8 @@ class Calc(QWidget):
         self.selectOperation = QComboBox()
         self.selectOperation.addItems(["Add", "Subtract", "Multiply", "Divide"])
         btn = QPushButton('Calculate')
-        Result = QLabel("Result")
-        self.OperationAnswer = QLineEdit()
+        Result = QLabel("Result:")
+        self.OperationAnswer = QLabel()
         calcLayout = QGridLayout()
         calcLayout.addWidget(numOne, 0, 0)
         calcLayout.addWidget(self.firstNum, 0, 1)
@@ -51,5 +51,3 @@ mainWindow = Calc()
 status = app.exec_()
 sys.exit(status)
 
-if __name__ == '__main__':
-    window()
